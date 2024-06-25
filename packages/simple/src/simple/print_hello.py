@@ -1,4 +1,3 @@
 def print_hello():
-    """ Prints hello
-    """
+    """Prints hello"""
     print("hello")
