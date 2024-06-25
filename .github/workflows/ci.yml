@@ -35,11 +35,11 @@ jobs:
 
     - name: Install Dependencies
       run: |
-        pip install .[test]
+        pip install packages/simple[test]
 
     - name: Test
       run: |
-        pytest tests/
+        pytest packages/simple/tests/
 
   # Check linting, formating, types, etc.
   lint:
@@ -59,4 +59,5 @@ jobs:
 
     - name: Lint
       run: |
+        cd packages/simple
         pre-commit run --all-files
