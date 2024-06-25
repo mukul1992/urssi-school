@@ -40,7 +40,8 @@ jobs:
 
     - name: Test
       run: |
-        pytest packages/simple/tests/
+        cd packages/simple
+        pytest tests/
 
   # Check linting, formating, types, etc.
   lint:
