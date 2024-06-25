@@ -9,7 +9,7 @@ on:
   pull_request:
     branches:
       - main
-  schedule:
+  #schedule:
     # At 17:31 every Tuesday (UTC)
     # At 9:31 every Tuesday (PST)
     #- cron: "31 17 * * 2"
